@@ -1,6 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+  .member-img {
+      position: relative;
+      overflow: hidden;
+    }
 
+    .member-img img {
+      width: 90%;
+      height: auto;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .member-img:hover img {
+      transform: scale(1.3);
+    }
+
+    .social {
+      position: absolute;
+      top: 89%;
+      left: 50%;
+      /* transform: translate(-50%, -50%); */
+      opacity: 0;
+      /* transition: opacity 0.5s ease-in-out; */
+    }
+
+    .member-img:hover .social {
+      opacity: 1;
+    }
+
+    .social a {
+      margin: 0 5px;
+      color: #db3232;
+      text-decoration: none;
+    }
+</style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -24,9 +58,13 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&family=Roboto+Slab:wght@500;600;700&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Moderna
@@ -40,11 +78,11 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center ">
+  <header id="header" class="fixed-top d-flex align-items-center " style="background: black;opacity: 0.8;">
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1>
+        <h1 class="text-light"><a href="index.html"><span><img src="./assets/img/csilogo.webp"/></span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -82,26 +120,30 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main" style="background:black; font-family: 'Times New Roman', Times, serif;">
 
     <!-- ======= Our Team Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+    <section class="breadcrumbs" style="background-color: black;">
+      <div class="container" style="background-color: black;">
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Our Team</h2>
+
+        <div class="d-flex justify-content-between align-items-center" style="background-color: black;">
+          <!-- <h2><bold>Our Team</bold></h2> -->
+          <h1 style="font-family:'Poppins';font-size: 50px;font-weight:500;margin-left: 30px;"><span></span> Governing Body</h1>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Our Team</li>
+            <li>Governing Body</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Our Team Section -->
 
+
+
     <!-- ======= Team Section ======= -->
-    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="container">
+    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="background-color: black" >
+      <div class="container" style="background-color:linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);">
 
         <div class="row">
 
@@ -332,10 +374,769 @@
       </div>
     </section><!-- End Team Section -->
 
+<!-- new section added-->
+
+<section class="team-2">
+
+  <div class="responsive-container-block container" >
+    <p class="text-blk team-head-text" style="font-family: 'Poppins';">
+      Executive Commitee
+    </p>
+    <div class="responsive-container-block"  id="responsive-container">
+      <!-- <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+        <div class="card">
+          <div class="team-image-wrapper">
+            <img class="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png">
+          </div>
+          <p class="text-blk name">
+            Davis George
+          </p>
+          <p class="text-blk position">
+            CEO
+          </p>
+          <p class="text-blk feature-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.twitter.com" target="_blank">
+              <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+              <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+            </a>
+          </div>
+        </div>
+      </div> -->
+      
+   
+
+    
+     
+
+
+
+
+  <script>
+    // Sample list of team members
+    var teamMembers = [
+   
+      {
+        name: "Mohammed Abdul Azeez",
+        position: "Tech Head",
+        featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        twitter: "https://www.twitter.com/mohammedazeez",
+        facebook: "https://www.facebook.com/mohammedazeez",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png"
+      },
+      {
+        name: "Mohammed Ibrahim Nasir",
+        position: "Tech Head",
+        featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        twitter: "https://www.twitter.com/mohammedibrahim",
+        facebook: "https://www.facebook.com/mohammedibrahim",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"
+      },
+      {
+        name: "Mohammed Abdul Rehman",
+        position: "Tech Head",
+        featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        twitter: "https://www.twitter.com/mohammedrehman",
+        facebook: "https://www.facebook.com/mohammedrehman",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert3.png"
+      },
+      {
+        name: "Mohammed Shafaat Hussain",
+        position: "Tech Head",
+        featureText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        twitter: "https://www.twitter.com/mohammedshafaat",
+        facebook: "https://www.facebook.com/mohammedshafaat",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert4.png"
+      },
+      {
+        name: "Mohammed Hisham Saeed",
+        position: "Tech Head",
+        featureText: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        twitter: "https://www.twitter.com/mohammedhisham",
+        facebook: "https://www.facebook.com/mohammedhisham",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert5.png"
+      },
+      {
+        name: "Habeeb Saleh",
+        position: "Tech Head",
+        featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        twitter: "https://www.twitter.com/habeebsaleh",
+        facebook: "https://www.facebook.com/habeebsaleh",
+        image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert6.png"
+      },
+      {
+    name: "Rashed Ur Rahman",
+    position: "Associate Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/rashedurrahman",
+    facebook: "https://www.facebook.com/rashedurrahman",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head1.png"
+  },
+  {
+    name: "Mohammed Abdur Razzaq",
+    position: "Associate Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedrazzaq",
+    facebook: "https://www.facebook.com/mohammedrazzaq",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head2.png"
+  },
+  {
+    name: "Talha Mohammed Khan",
+    position: "Associate Head",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/talhakhan",
+    facebook: "https://www.facebook.com/talhakhan",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head3.png"
+  },
+  {
+    name: "Mohammed Aymen Quadri",
+    position: "Associate Head",
+    featureText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    twitter: "https://www.twitter.com/mohammedaymen",
+    facebook: "https://www.facebook.com/mohammedaymen",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head4.png"
+  },
+  {
+    name: "Mohammed Shoaib Asim",
+    position: "Associate Head",
+    featureText: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    twitter: "https://www.twitter.com/mohammedshoaib",
+    facebook: "https://www.facebook.com/mohammedshoaib",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head5.png"
+  },
+  {
+    name: "Tauseef Banu",
+    position: "Tech Member",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/tauseefbanu",
+    facebook: "https://www.facebook.com/tauseefbanu",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/tech_member1.png"
+  },
+  {
+    name: "Rida Marium",
+    position: "Tech Member",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/ridamariam",
+    facebook: "https://www.facebook.com/ridamariam",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/tech_member2.png"
+  },
+  {
+    name: "Sumaira Anjum",
+    position: "Tech Member",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/sumairaanjum",
+    facebook: "https://www.facebook.com/sumairaanjum",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/tech_member3.png"
+  },
+  {
+    name: "Syed Kashif Mujtaba",
+    position: "Events Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/syedkashifmujtaba",
+    facebook: "https://www.facebook.com/syedkashifmujtaba",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/head.png"
+  },
+  {
+    name: "Abdullah Yar Khan",
+    position: "Events Associate Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/abdullahyarkhan",
+    facebook: "https://www.facebook.com/abdullahyarkhan",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head1.png"
+  },
+  {
+    name: "Shaik Seema Nasreen",
+    position: "Events Associate Head",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/shaikseemanasreen",
+    facebook: "https://www.facebook.com/shaikseemanasreen",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head2.png"
+  },
+  {
+    name: "Rayyan Shaji Ansari",
+    position: "Events Member",
+    featureText: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    twitter: "https://www.twitter.com/rayyanshajiansari",
+    facebook: "https://www.facebook.com/rayyanshajiansari",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/member1.png"
+  },
+  {
+    name: "Md. Abdullah Shareef",
+    position: "Events Member",
+    featureText: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    twitter: "https://www.twitter.com/mdabdullahshareef",
+    facebook: "https://www.facebook.com/mdabdullahshareef",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/member2.png"
+  },
+  {
+    name: "Mohammed Abdul Jameel",
+    position: "Design Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/mohammedabduljameel",
+    facebook: "https://www.facebook.com/mohammedabduljameel",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/head.png"
+  },
+  {
+    name: "Mohammed Abdul Rahman",
+    position: "Design Associate Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedabdulrahman",
+    facebook: "https://www.facebook.com/mohammedabdulrahman",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head1.png"
+  },
+  {
+    name: "Syeda Wafiqah Ali",
+    position: "Design Associate Head",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/syedawafiqahali",
+    facebook: "https://www.facebook.com/syedawafiqahali",
+    image: "https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/associate_head2.png"
+  },
+  {
+    name: "Fatima Balig",
+    position: "Media Head",
+    featureText: "",
+    twitter: "",
+    facebook: "",
+    image: ""
+  },
+  {
+    name: "Ifrah Tanzeel",
+    position: "Media Head",
+    featureText: "",
+    twitter: "",
+    facebook: "",
+    image: ""
+  },
+  {
+    name: "Zaina Fatima Abedi",
+    position: "Media Head",
+    featureText: "",
+    twitter: "",
+    facebook: "",
+    image: ""
+  },
+  {
+    name: "Mohammed Abdul Adil",
+    position: "Editorial Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/mohammedabduladil",
+    facebook: "https://www.facebook.com/mohammedabduladil",
+    image: "URL_TO_MOHAMMED_ABDUL_ADIL_IMAGE"
+  },
+  {
+    name: "Mohammed Omer",
+    position: "Editorial Associate Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedomer",
+    facebook: "https://www.facebook.com/mohammedomer",
+    image: "URL_TO_MOHAMMED_OMER_IMAGE"
+  },
+ 
+  {
+    name: "Syeda Kausar Fatima",
+    position: "HR Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/syedakausarfatima",
+    facebook: "https://www.facebook.com/syedakausarfatima",
+    image: ""
+  },
+  {
+    name: "Mohammed Asif Uddin",
+    position: "HR Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedasifuddin",
+    facebook: "https://www.facebook.com/mohammedasifuddin",
+    image: ""
+  },
+  {
+    name: "Nabahat Injela",
+    position: "Marketing Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/nabahatinjela",
+    facebook: "https://www.facebook.com/nabahatinjela",
+    image: ""
+  },
+  {
+    name: "Mohammed Anas Uddin",
+    position: "Marketing Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedanasuddin",
+    facebook: "https://www.facebook.com/mohammedanasuddin",
+    image: ""
+  },
+  {
+    name: "Musaib Ahmed Khan",
+    position: "Marketing Head",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/musaibahmedkhan",
+    facebook: "https://www.facebook.com/musaibahmedkhan",
+    image: ""
+  },
+  {
+    name: "Salman Mohammed Arif",
+    position: "Marketing Associate Head",
+    featureText: "",
+    twitter: "",
+    facebook: "",
+    image: ""
+  },
+  {
+    name: "Syed Abdul Hayyaj",
+    position: "Marketing Member",
+    featureText: "",
+    twitter: "",
+    facebook: "",
+    image: ""
+  },
+  {
+    name: "Mariya Hussain",
+    position: "Web and Graphics Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/mariyahussain",
+    facebook: "https://www.facebook.com/mariyahussain",
+    image: ""
+  },
+  {
+    name: "Mohammed Amaan Uddin",
+    position: "Web and Graphics Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedamaanuddin",
+    facebook: "https://www.facebook.com/mohammedamaanuddin",
+    image: ""
+  },
+  {
+    name: "Mohammed Affan Asif",
+    position: "Web and Graphics Head",
+    featureText: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    twitter: "https://www.twitter.com/mohammedaffanasif",
+    facebook: "https://www.facebook.com/mohammedaffanasif",
+    image: ""
+  },
+  {
+    name: "Shaik Amaan Basha",
+    position: "Operations Head",
+    featureText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    twitter: "https://www.twitter.com/shaikamaanbasha",
+    facebook: "https://www.facebook.com/shaikamaanbasha",
+    image: ""
+  },
+  {
+    name: "Mohammed Yaseen",
+    position: "Operations Head",
+    featureText: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    twitter: "https://www.twitter.com/mohammedyaseen",
+    facebook: "https://www.facebook.com/mohammedyaseen",
+    image: ""
+  }
+
+
+
+      // Add more team members as needed
+    ];
+
+    // Function to create a card for a team member
+    function createCard(member) {
+      var responsiveContainer = document.getElementById("responsive-container");
+
+      var cellBlockDiv = document.createElement("div");
+      cellBlockDiv.className = "responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container";
+
+      var cardDiv = document.createElement("div");
+      cardDiv.className = "card";
+
+      cardDiv.innerHTML = `
+        <div class="team-image-wrapper">
+          <img class="team-member-image" src="${member.image}">
+        </div>
+        <p class="text-blk name">${member.name}</p>
+        <p class="text-white position">${member.position}</p>
+        <div class="social-icons">
+          <a href="${member.twitter}" target="_blank">
+            <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg">
+          </a>
+          <a href="${member.facebook}" target="_blank">
+            <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg">
+          </a>
+        </div>
+      `;
+
+      cellBlockDiv.appendChild(cardDiv);
+      responsiveContainer.appendChild(cellBlockDiv);
+    }
+
+    // Create cards for each team member after the document has fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      for (var i = 0; i < teamMembers.length; i++) {
+        createCard(teamMembers[i]);
+      }
+    });
+  </script>
+
+
+
+
+<style>
+  * {
+  font-family: Nunito, sans-serif;
+}
+
+.responsive-cell-block {
+  min-height: 50px;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 60px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1380px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+.card {
+  text-align: center;
+  background-color: rgb(41, 37, 37);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+
+.card-container {
+  width: 150px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wk-desk-1 {
+  width: 8.333333%;
+}
+
+.wk-desk-2 {
+  width: 16.666667%;
+}
+
+.wk-desk-3 {
+  width: 25%;
+}
+
+.wk-desk-4 {
+  width: 33.333333%;
+}
+
+.wk-desk-5 {
+  width: 41.666667%;
+}
+
+.wk-desk-6 {
+  width: 50%;
+}
+
+.wk-desk-7 {
+  width: 58.333333%;
+}
+
+.wk-desk-8 {
+  width: 66.666667%;
+}
+
+.wk-desk-9 {
+  width: 75%;
+}
+
+.wk-desk-10 {
+  width: 83.333333%;
+}
+
+.wk-desk-11 {
+  width: 91.666667%;
+}
+
+.wk-desk-12 {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wk-ipadp-1 {
+    width: 8.333333%;
+  }
+
+  .wk-ipadp-2 {
+    width: 16.666667%;
+  }
+
+  .wk-ipadp-3 {
+    width: 25%;
+  }
+
+  .wk-ipadp-4 {
+    width: 33.333333%;
+  }
+
+  .wk-ipadp-5 {
+    width: 41.666667%;
+  }
+
+  .wk-ipadp-6 {
+    width: 50%;
+  }
+
+  .wk-ipadp-7 {
+    width: 58.333333%;
+  }
+
+  .wk-ipadp-8 {
+    width: 66.666667%;
+  }
+
+  .wk-ipadp-9 {
+    width: 75%;
+  }
+
+  .wk-ipadp-10 {
+    width: 83.333333%;
+  }
+
+  .wk-ipadp-11 {
+    width: 91.666667%;
+  }
+
+  .wk-ipadp-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wk-tab-1 {
+    width: 8.333333%;
+  }
+
+  .wk-tab-2 {
+    width: 16.666667%;
+  }
+
+  .wk-tab-3 {
+    width: 25%;
+  }
+
+  .wk-tab-4 {
+    width: 33.333333%;
+  }
+
+  .wk-tab-5 {
+    width: 41.666667%;
+  }
+
+  .wk-tab-6 {
+    width: 50%;
+  }
+
+  .wk-tab-7 {
+    width: 58.333333%;
+  }
+
+  .wk-tab-8 {
+    width: 66.666667%;
+  }
+
+  .wk-tab-9 {
+    width: 75%;
+  }
+
+  .wk-tab-10 {
+    width: 83.333333%;
+  }
+
+  .wk-tab-11 {
+    width: 91.666667%;
+  }
+
+  .wk-tab-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wk-mobile-1 {
+    width: 8.333333%;
+  }
+
+  .wk-mobile-2 {
+    width: 16.666667%;
+  }
+
+  .wk-mobile-3 {
+    width: 25%;
+  }
+
+  .wk-mobile-4 {
+    width: 33.333333%;
+  }
+
+  .wk-mobile-5 {
+    width: 41.666667%;
+  }
+
+  .wk-mobile-6 {
+    width: 50%;
+  }
+
+  .wk-mobile-7 {
+    width: 58.333333%;
+  }
+
+  .wk-mobile-8 {
+    width: 66.666667%;
+  }
+
+  .wk-mobile-9 {
+    width: 75%;
+  }
+
+  .wk-mobile-10 {
+    width: 83.333333%;
+  }
+
+  .wk-mobile-11 {
+    width: 91.666667%;
+  }
+
+  .wk-mobile-12 {
+    width: 100%;
+  }
+}
+</style>
+
+
+</section>
+
+
+
+
+
+
+
+
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500" style="background-color: black;">
 
     <!-- <div class="footer-newsletter">
       <div class="container">
